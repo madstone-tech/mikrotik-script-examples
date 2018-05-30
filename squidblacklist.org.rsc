@@ -1,6 +1,7 @@
 # pulling in http://www.squidblacklist.org/downloads/drop.malicious.rsc
 # script should run every 30 mins (the interval which the blacklist is updated)
-
+# "/system script run blacklist-updater" is the scheduled task that should be
+# created
 :local droplist "http://www.squidblacklist.org/downloads/drop.malicious.rsc"
 :local filename "drop.malicious.rsc"
 
