@@ -1,4 +1,6 @@
-et [ find default-name=wlan1 ] mac-address]
+# gather basic router info -----------------------------------------------
+:local uptime [/system resource get uptime]; 
+:local macadd [/interface wireless get [ find default-name=wlan1 ] mac-address]
 :local ver [/system resource get version]
 :local name [/system identity get name]
 
